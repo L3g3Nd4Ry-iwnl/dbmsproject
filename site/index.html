@@ -5,6 +5,23 @@
         text-align: center;
     }
     
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: yellowgreen;
+        color: white;
+        text-align: center;
+    }
+    
+    body {
+        background-image: url('images/p4.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    
     h1 {
         text-align: center;
     }
@@ -16,18 +33,17 @@
 </head>
 
 <body>
-    <header><img src="headertest.jpeg"></header>
     <h1>Select the Login Type</h1>
     <div>Administrator:<br>
         <a href="adminlogin.html" target="_blank">Click here to login as Administrator</a>
     </div>
-    <div>Ownner:<br>
+    <div>Owner:<br>
         <a href="ownerlogin.html" target="blank">Click here to login as Owner</a>
     </div>
     <div>Customer:<br>
         <a href="customerlogin.html" target="_blank">Click here to login as Customer</a>
     </div>
 </body>
-<footer>Life On Canvas &copy;</footer>
+<footer class="footer">Life On Canvas &copy;</footer>
 
 </html>
