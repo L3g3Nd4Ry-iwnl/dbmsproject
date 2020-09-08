@@ -1,23 +1,22 @@
-<form action="action_page.php" method="post">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
+<!doctype html>
+<html>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+<head>
+    <meta charset="utf-8">
+    <title>Type Select</title>
+</head>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+<body>
+    <h1>Select the Login Type</h1>
+    <div>Administrator:<br>
+        <a href="adminlogin.html" target="_blank">Click here to login as Administrator</a>
+    </div>
+    <div>Ownner:<br>
+        <a href="ownerlogin.html" target="blank">Click here to login as Owner</a>
+    </div>
+    <div>Customer:<br>
+        <a href="customerlogin.html" target="_blank">Click here to login as Customer</a>
+    </div>
+</body>
 
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
+</html>
