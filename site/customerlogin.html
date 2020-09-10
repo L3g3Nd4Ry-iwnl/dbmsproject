@@ -20,30 +20,43 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
+        margin: 0;
+        padding: 0;
     }
     
     h1 {
         text-align: center;
     }
 </style>
+<div>
+    <a href="index.html"><img src="images/banner.jpg" height="50" width="1920"></a>
+</div>
 
 <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Login</title>
 </head>
 
 <body>
-    <h1></h1>
-    <div>
-        <form>
-            <label for="uid">Username: </label>
-            <input type="text" id="userid" name="userid"><br><br>
-            <label for="pid">Password: </label>
-            <input type="password" id="pwdid" name="pwdid"><br><br>
-            <button type="button" id="submit">Submit</button>
-        </form>
+    <div style="padding:300px;">
+        <div style="position:relative;left:33%;width:450px;height:250px;border-radius:20px;background-image: url('images/back7.jpeg');background-size: cover;box-shadow:5px 5px 5px 5px grey;border:0px solid #000">
+            <h1 style="padding-top: 15px;font-family: Impact, Charcoal, sans-serif">Welcome Customer
+                <img src="images/customer3.png" height="35px" width="35px" style="border-radius: 10px;">
+            </h1>
+            <div>
+                <form style="font-family: Impact, Charcoal, sans-serif;">
+                    <label for="uid">Username : </label>
+                    <input type="text" id="userid" name="userid" style="border-radius: 7.5px;"><br><br>
+                    <label for="pid">Password : </label>
+                    <input type="password" id="pwdid" name="pwdid" style="border-radius: 7.5px;"><br><br>
+                    <button type="button" id="submit" style="border-radius: 7.5px;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);">Submit</button><br><br>
+                    <label for="signup">New User?</label>
+                    <a href="signupsheet.html">Register</a>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
-<footer class="footer">Life On Canvas &copy;</footer>
+<footer class="footer">Life On a Canvas &copy;</footer>
 
 </html>
