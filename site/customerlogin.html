@@ -1,5 +1,19 @@
 <!doctype html>
 <html>
+<!-- <script>
+    function validateForm() {
+        var x = document.forms["myForm"]["userid"].value;
+        var y = document.getElementById("pwdid");
+        if (x == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+        if(y.value.length <= 8){
+            alert("Minimum size is 8");
+        }
+    }
+</script> -->
+
 <style>
     div {
         text-align: center;
@@ -29,7 +43,7 @@
     }
 </style>
 <div>
-    <a href="index.html"><img src="images/banner.jpg" height="50" width="1920"></a>
+    <a href="index.html"><img src="images/banner.jpg" height="50" width="100%"></a>
 </div>
 
 <head>
@@ -44,12 +58,12 @@
                 <img src="images/customer3.png" height="35px" width="35px" style="border-radius: 10px;">
             </h1>
             <div>
-                <form style="font-family: Impact, Charcoal, sans-serif;">
+                <form id="frm1" name="myForm" onsubmit="validateForm()" method="get" style="font-family: Impact, Charcoal, sans-serif;">
                     <label for="uid">Username : </label>
-                    <input type="text" id="userid" name="userid" style="border-radius: 7.5px;"><br><br>
+                    <input type="text" id="userid" name="userid" style="border-radius: 7.5px;" minlength="8" required><br><br>
                     <label for="pid">Password : </label>
-                    <input type="password" id="pwdid" name="pwdid" style="border-radius: 7.5px;"><br><br>
-                    <button type="button" id="submit" style="border-radius: 7.5px;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);">Submit</button><br><br>
+                    <input type="password" id="pwdid" name="pwdid" style="border-radius: 7.5px;" minlength="8" required><br><br>
+                    <input type="submit" id="submitbutton" style="border-radius: 7.5px;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);"><br><br>
                     <label for="signup">New User?</label>
                     <a href="signupsheet.html">Register</a>
                 </form>

@@ -29,7 +29,7 @@
     }
 </style>
 <div>
-    <a href="index.html"><img src="images/banner.jpg" height="50" width="1920"></a>
+    <a href="index.html"><img src="images/banner.jpg" height="50" width="100%"></a>
 </div>
 
 <head>
@@ -38,21 +38,29 @@
 </head>
 
 <body style="font-family: Impact, Charcoal, sans-serif;">
-    <div style="padding:200px;">
-        <div style="position:relative;left:37%;width:450px;height:425px;border-radius:20px;background-image: url('images/back7.jpeg');background-size: cover;box-shadow:5px 5px 5px 5px grey;border:0px solid #000">
+    <div style="padding:100px;">
+        <div style="position:relative;left:37%;width:450px;height:600px;border-radius:20px;background-image: url('images/back7.jpeg');background-size: cover;box-shadow:5px 5px 5px 5px grey;border:0px solid #000">
             <h1 style="padding-top: 15px;font-family: Impact, Charcoal, sans-serif">Sign Up</h1>
             <div>
                 <form>
                     <label for="uid">Username : </label>
-                    <input type="text" id="userid" name="userid" style="border-radius: 7.5px;"><br><br>
+                    <input type="text" id="userid" name="userid" style="border-radius: 7.5px;" minlength="8" required><br><br>
                     <label for="eid">Email address : </label>
-                    <input type="text" id="emailid" name="emailid" style="border-radius: 7.5px;"><br><br>
+                    <input type="text" id="emailid" name="emailid" style="border-radius: 7.5px;" required><br><br>
                     <label for="pid">Password : </label>
-                    <input type="password" id="pwdid" name="pwdid" style="border-radius: 7.5px;"><br><br>
+                    <input type="password" id="pwdid" name="pwdid" style="border-radius: 7.5px;" minlength="8" required><br><br>
                     <label for="phid">Phone Number : </label>
-                    <input type="text" id="phoneid" name="phoneid" style="border-radius: 7.5px;"><br><br>
-                    <label for="aid">Address : </label>
-                    <input type="text" id="addrid" name="addrid" style="border-radius: 7.5px;"><br><br>
+                    <input type="number" id="phoneid" name="phoneid" style="border-radius: 7.5px;" minlength="10" maxlength="10" required><br><br>
+                    <label for="aid">House No : </label>
+                    <input type="text" id="addrid" name="addrid" style="border-radius: 7.5px;" required><br><br>
+                    <label for="aid">Street-Name : </label>
+                    <input type="text" id="addrid" name="addrid" style="border-radius: 7.5px;" required><br><br>
+                    <label for="aid">Area : </label>
+                    <input type="text" id="addrid" name="addrid" style="border-radius: 7.5px;" required><br><br>
+                    <label for="aid">City : </label>
+                    <input type="text" id="addrid" name="addrid" style="border-radius: 7.5px;" required><br><br>
+                    <label for="aid">State : </label>
+                    <input type="text" id="addrid" name="addrid" style="border-radius: 7.5px;" required><br><br>
                     <label for="signup">Signup as?:</label>
                     <select name="signuptype" id="signuptype" style="border-radius: 7.5px;">
                     <option value="customer">customer</option>
@@ -60,15 +68,15 @@
                     </select>
                     <br><br>
                     <label for="option">Plan(For Customer):</label><br>
-                    <input type="radio" id="plan1" name="plan" value="plan1">
+                    <input type="radio" id="plan1" name="plan1" value="plan1">
                     <label for="plan1">Bronze</label>
-                    <input type="radio" id="plan2" name="plan" value="plan2">
+                    <input type="radio" id="plan2" name="plan2" value="plan2">
                     <label for="plan2">Silver</label>
-                    <input type="radio" id="plan3" name="plan" value="plan3">
+                    <input type="radio" id="plan3" name="plan3" value="plan3">
                     <label for="plan3">Gold</label>
-                    <input type="radio" id="plan4" name="plan" value="plan4">
+                    <input type="radio" id="plan4" name="plan4" value="plan4">
                     <label for="plan4">Platinum</label><br><br>
-                    <button type="button" id="submit" style="border-radius: 7.5px;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);">Submit</button>
+                    <input type="submit" id="submitbutton" style="border-radius: 7.5px;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);">
 
                 </form>
             </div>

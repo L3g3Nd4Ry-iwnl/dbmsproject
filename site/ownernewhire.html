@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<style>
+    div {
+        text-align: center;
+    }
+    
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: yellowgreen;
+        color: white;
+        text-align: center;
+    }
+    
+    body {
+        background-image: url('images/p4.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+</style>
+<div>
+    <a href="index.html"><img src="images/banner.jpg" height="50" width="100%"></a>
+</div>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit</title>
+</head>
+
+<body style="font-family: Impact, Charcoal, sans-serif;">
+
+    <div style=" padding:250px; ">
+        <div style="position:relative;left:36%;width:450px;height:325px;border-radius:20px;background-image: url('images/back7.jpeg');background-size: cover;box-shadow:5px 5px 5px 5px grey;border:0px solid #000;overflow: auto;">
+            <h1 style="padding-top: 15px;">Submission</h1>
+            <form>
+                <label for="paintingname">Painting Name:</label>
+                <input type="text" name="paintingname" style="border-radius: 7.5px;" required>
+                <button type="button" style="border-radius: 7.5px;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);">Upload</button><br><br>
+                <label for=" artistname ">Artist Name: </label>
+                <input type="text " name="artistname " style="border-radius: 7.5px; " required><br><br>
+                <label for="theme ">Theme: </label>
+                <input type="text " name="theme " style="border-radius: 7.5px; " required><br><br>
+                <label for="price ">Price: </label>
+                <input type="number" name="price " style="border-radius: 7.5px; " required><br><br>
+                <input type="submit" id="submitbutton" style="border-radius: 7.5px;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); ">
+            </form>
+        </div>
+    </div>
+</body>
+<footer class="footer ">Life On a Canvas &copy;</footer>
+
+</html>

@@ -29,7 +29,7 @@
     }
 </style>
 <div>
-    <a href="index.html"><img src="images/banner.jpg" height="50" width="1920"></a>
+    <a href="index.html"><img src="images/banner.jpg" height="50" width="100%"></a>
 </div>
 
 <head>
@@ -46,10 +46,10 @@
             <div>
                 <form style="font-family: Impact, Charcoal, sans-serif;">
                     <label for="uid">Username : </label>
-                    <input type="text" id="userid" name="userid" style="border-radius: 7.5px;"><br><br>
+                    <input type="text" id="userid" name="userid" style="border-radius: 7.5px;" required><br><br>
                     <label for="pid">Password : </label>
-                    <input type="password" id="pwdid" name="pwdid" style="border-radius: 7.5px;"><br><br>
-                    <button type="button" id="submit" style="border-radius: 7.5px;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);">Submit</button>
+                    <input type="password" id="pwdid" name="pwdid" style="border-radius: 7.5px;" minlength="8" required><br><br>
+                    <input type="submit" id="submit" style="border-radius: 7.5px;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);">
                 </form>
             </div>
         </div>
